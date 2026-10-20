@@ -1,13 +1,11 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
 
-function App() {
-  return (
-    <div style={{ padding: '30px', textAlign: 'center' }}>
-      <h1>MHR Study Zone</h1>
-      <p>Welcome to MHR Study Zone!</p>
-    </div>
-  );
-}
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./styles.css";
 
-createRoot(document.getElementById('root')).render(<App />);
+createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
